@@ -41,7 +41,7 @@ export default {
     // module options
     sockets: [{
       name: 'main',
-      url: 'http://localhost:6061',
+      url: 'http://192.168.1.6:6061',
       default: true,
     }]
   },
@@ -54,4 +54,8 @@ export default {
 
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
+
+  server: {
+    host: "0.0.0.0"
+  },
 }
