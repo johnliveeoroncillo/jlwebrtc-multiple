@@ -61,6 +61,6 @@ export default {
   },
 
   env: {
-    WS_URL: process.env.WS_URL || '',
+    WS_URL: process.env.WS_URL || 'http://localhost:6061',
   },
 }
