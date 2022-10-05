@@ -1,3 +1,4 @@
+require('dotenv').config();
 export default {
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
@@ -41,7 +42,7 @@ export default {
     // module options
     sockets: [{
       name: 'main',
-      url: 'http://192.168.1.6:6061',
+      url: process.env.WS_URL,
       default: true,
     }]
   },
@@ -57,5 +58,9 @@ export default {
 
   server: {
     host: "0.0.0.0"
+  },
+
+  env: {
+    WS_URL: process.env.WS_URL || '',
   },
 }
