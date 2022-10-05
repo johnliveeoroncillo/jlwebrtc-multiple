@@ -4,6 +4,7 @@
   "private": true,
   "scripts": {
     "server": "nodemon ./server",
+    "server:prod": "node ./server",
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
